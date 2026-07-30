@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0f1419">
+  <title>Transpyrenees Race N6 — Aide</title>
+  <style>
+    :root {{
+      --bg: #0f1419; --bg2: #1a2332; --fg: #e8eaed; --muted: #9aa0a6;
+      --accent: #fbbf24; --border: #2d3748; --link: #60a5fa;
+    }}
+    * {{ box-sizing: border-box; }}
+    body {{
+      margin: 0; padding: 0;
+      font-family: system-ui, -apple-system, sans-serif;
+      background: var(--bg); color: var(--fg);
+      line-height: 1.55; font-size: 15px;
+    }}
+    header {{
+      position: sticky; top: 0; z-index: 10;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 12px 16px; background: rgba(15,20,25,0.95);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(8px);
+    }}
+    header a {{
+      color: var(--accent); text-decoration: none; font-weight: 800; font-size: 15px;
+    }}
+    header .meta {{ color: var(--muted); font-size: 12px; }}
+    main {{
+      max-width: 720px; margin: 0 auto; padding: 20px 16px 48px;
+    }}
+    h1 {{ font-size: 1.5rem; margin: 0 0 8px; color: var(--accent); }}
+    h2 {{
+      font-size: 1.15rem; margin: 28px 0 10px; padding-bottom: 6px;
+      border-bottom: 1px solid var(--border); color: #f3f4f6;
+    }}
+    h3 {{ font-size: 1rem; margin: 18px 0 8px; color: #d1d5db; }}
+    p {{ margin: 0 0 12px; }}
+    ul, ol {{ margin: 0 0 14px; padding-left: 1.25rem; }}
+    li {{ margin-bottom: 6px; }}
+    a {{ color: var(--link); }}
+    strong {{ color: #f9fafb; }}
+    code {{
+      background: var(--bg2); padding: 2px 6px; border-radius: 4px;
+      font-size: 0.9em; border: 1px solid var(--border);
+    }}
+    table {{
+      width: 100%; border-collapse: collapse; margin: 12px 0 16px;
+      font-size: 14px;
+    }}
+    th, td {{
+      border: 1px solid var(--border); padding: 8px 10px; text-align: left;
+    }}
+    th {{ background: var(--bg2); color: var(--accent); }}
+    tr:nth-child(even) td {{ background: rgba(26,35,50,0.5); }}
+    hr {{
+      border: none; border-top: 1px solid var(--border); margin: 24px 0;
+    }}
+    .subtitle {{ color: var(--muted); margin-bottom: 20px; font-size: 14px; }}
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">← Retour course</a>
+    <span class="meta">TPR N6 2026</span>
+  </header>
+  <main>
+<h1>🚵‍♂️ TransPyrenees Race No. 6 (2026) — Roadbook</h1>
+    <p>&gt; <strong>Généré le 2026-07-30 16:29</strong> par <code>scripts/race/build_roadbook.py</code> depuis les 15 GPX de <code>Stages/</code> et <code>config/stages.json</code>. Ne pas éditer à la main.</p>
+    <ul>
+    <li><strong>Distance :</strong> <strong>1921 km</strong></li>
+    <li><strong>Dénivelé positif :</strong> <strong>+34641 m</strong> (altitude lissée, méthode <code>audit_tpr_chain</code>)</li>
+    <li><strong>Discontinuités (&gt; 50 m) :</strong> <strong>aucune — chaîne continue</strong> (mesuré à la génération)</li>
+    <li><strong>Roulage modélisé :</strong> <strong>95.8 h</strong> pénalité de surface comprise (91.8 h sur bitume seul, soit +4.0 h de non-bitume)</li>
+    <li><strong>Control points :</strong> CP1 Pessonada (km 401 · S6 km 23), CP2 Sarvise (km 625 · S8 km 20), CP3 Gran Camping Zarautz (km 1035 · S10 km 149)</li>
+    </ul>
+    <p>&gt; <strong>Deux kilométrages, et ils ne disent pas la même chose.</strong> Le <strong>cumul</strong> est la coordonnée du plan : cut-off, horaires et marges sont construits dessus, et c&#x27;est la référence commune avec l&#x27;organisation. Le <strong>km de segment</strong>, noté <code>S6 km 23</code>, est la coordonnée mesurable : c&#x27;est ce qu&#x27;affiche le compteur quand le fichier <code>6.</code> est chargé. Le second survit à une variante prise ailleurs sur le parcours, le premier non — passer la liaison 6 par la route décale de plusieurs dizaines de kilomètres tous les cumuls en aval, sans toucher au km de segment des étapes suivantes.</p>
+    <hr>
+    <h2>🏆 Découpage en 7 étapes</h2>
+    <table><thead><tr>
+    <th>Étape</th>
+    <th>Date</th>
+    <th>Départ → Arrivée</th>
+    <th>Distance</th>
+    <th>Cumul à l&#x27;arrivée</th>
+    <th>D+</th>
+    <th>Départ</th>
+    <th>Arrivée</th>
+    <th>Pauses</th>
+    <th>Roulage</th>
+    <th>Sommeil net</th>
+    </tr></thead><tbody>
+    <tr>
+    <td><strong>E1</strong></td>
+    <td>Ven 25 sept.</td>
+    <td><strong>Girona (départ) → Solsona</strong></td>
+    <td><strong>292 km</strong></td>
+    <td>km 292 · S4 km 20</td>
+    <td>+4 892 m</td>
+    <td>07h00</td>
+    <td><strong>23h57</strong></td>
+    <td>2h30</td>
+    <td>14h28</td>
+    <td><strong>4h17</strong></td>
+    </tr>
+    <tr>
+    <td><strong>E2</strong></td>
+    <td>Sam 26 sept.</td>
+    <td><strong>Solsona → Plan</strong></td>
+    <td><strong>271 km</strong></td>
+    <td>km 563 · S7 km 0</td>
+    <td>+5 053 m</td>
+    <td>05h30</td>
+    <td><strong>22h06</strong></td>
+    <td>2h30</td>
+    <td>14h06</td>
+    <td><strong>6h09</strong></td>
+    </tr>
+    <tr>
+    <td><strong>E3</strong></td>
+    <td>Dim 27 sept.</td>
+    <td><strong>Plan → Saint-Michel / Saint-Jean-Pied-de-Port</strong></td>
+    <td><strong>276 km</strong></td>
+    <td>km 839 · S9 km 3</td>
+    <td>+4 012 m</td>
+    <td>05h30</td>
+    <td><strong>20h00</strong></td>
+    <td>2h00</td>
+    <td>12h30</td>
+    <td><strong>8h15</strong></td>
+    </tr>
+    <tr>
+    <td><strong>E4</strong></td>
+    <td>Lun 28 sept.</td>
+    <td><strong>Saint-Michel / Saint-Jean-Pied-de-Port → Saint-Jean-de-Luz / Ciboure</strong></td>
+    <td><strong>274 km</strong></td>
+    <td>km 1113 · S12 km 59</td>
+    <td>+3 571 m</td>
+    <td>05h30</td>
+    <td><strong>19h46</strong></td>
+    <td>2h00</td>
+    <td>12h17</td>
+    <td><strong>6h28</strong></td>
+    </tr>
+    <tr>
+    <td><strong>E5</strong></td>
+    <td>Mar 29 sept.</td>
+    <td><strong>Saint-Jean-de-Luz / Ciboure → Esquièze-Sère / Luz-Saint-Sauveur</strong></td>
+    <td><strong>259 km</strong></td>
+    <td>km 1372 · S13 km 174</td>
+    <td>+5 713 m</td>
+    <td>03h30</td>
+    <td><strong>19h29</strong></td>
+    <td>2h30</td>
+    <td>13h29</td>
+    <td><strong>8h46</strong></td>
+    </tr>
+    <tr>
+    <td><strong>E6</strong></td>
+    <td>Mer 30 sept.</td>
+    <td><strong>Esquièze-Sère / Luz-Saint-Sauveur → Tarascon-sur-Ariège / Ax-les-Thermes</strong></td>
+    <td><strong>257 km</strong></td>
+    <td>km 1629 · S13 km 431</td>
+    <td>+6 489 m</td>
+    <td>05h30</td>
+    <td><strong>22h14</strong></td>
+    <td>2h30</td>
+    <td>14h15</td>
+    <td><strong>6h00</strong></td>
+    </tr>
+    <tr>
+    <td><strong>E7</strong></td>
+    <td>Jeu 1 oct.</td>
+    <td><strong>Tarascon-sur-Ariège / Ax-les-Thermes → Girona (arrivée)</strong></td>
+    <td><strong>292 km</strong></td>
+    <td>km 1921 · S15 km 33</td>
+    <td>+4 912 m</td>
+    <td>05h30</td>
+    <td><strong>22h44</strong></td>
+    <td>2h30</td>
+    <td>14h44</td>
+    <td>🏁</td>
+    </tr>
+    </tbody></table>
+    <p>&gt; Modèle : vitesse par bande de pente (<code>audit_tpr_chain.SPEED_BY_GRADE</code>), fatigue +12 %, et pénalité de surface par bac de 200 m (paved ×1.0, unknown_likely_paved ×0.95, suspect_unpaved ×0.8, unpaved ×0.65). Départ 05h30 les jours 2+, sauf E5 à 03h30, 1h15 de logistique hôtel déduite du sommeil.</p>
+    <p>&gt; ⏰ <strong>Nuit 4 — Saint-Jean-de-Luz / Ciboure : départ 03h30 au lieu de 05h30.</strong> Arrivée 19h46, nuit ramenée à <strong>6h28</strong> ; en échange E5 arrive à <strong>19h29</strong> et la nuit suivante monte à <strong>8h46</strong>, devant E6 et ses +6 489 m.</p>
+    <p>&gt;</p>
+    <p>&gt; Partir à 03h30 au lieu de 05h30 déplace deux heures de sommeil de cette nuit vers la nuit 5, juste avant E6 et ses +6 489 m. Le plan d&#x27;origine donnait la nuit la plus longue avant la moins dure des trois dernières journées et la plus courte avant la plus dure. E6 est aussi la seule des trois où exploser coûte cher : il reste 292 km derrière. Le départ se fait sur 45 km plats sous 115 m d&#x27;altitude, sans descente technique. 03h30 est la limite basse : plus tôt ferait passer cette nuit sous le plancher de 6 h. Suppose un hôtel d&#x27;où sortir avec le vélo en pleine nuit — Colbert a un veilleur de 22h à 8h.</p>
+    <h3>Fichiers GPX à charger, par étape</h3>
+    <p>Le compteur est chargé segment par segment : la distance qu&#x27;il affiche est celle du fichier courant, jamais celle de la journée. Ce tableau dit quel fichier ouvrir, à quel cumul basculer, et ce qu&#x27;il reste de l&#x27;étape à ce moment-là.</p>
+    <table><thead><tr>
+    <th>Étape</th>
+    <th>Fichier</th>
+    <th>Cumul</th>
+    <th>Km fichier</th>
+    <th>Reste de l&#x27;étape</th>
+    </tr></thead><tbody>
+    <tr>
+    <td><strong>E1</strong></td>
+    <td><code>1.TPRn6 Start parcours.gpx</code></td>
+    <td>0</td>
+    <td>0</td>
+    <td>292 km</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td><code>2.TPRn6 start to parcours A road.gpx</code></td>
+    <td>103</td>
+    <td>0</td>
+    <td>188 km</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td><code>3.TPRn6 A.gpx</code></td>
+    <td>270</td>
+    <td>0</td>
+    <td>22 km</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td><code>4.TPRn6 A to B Road.gpx</code></td>
+    <td>272</td>
+    <td>0</td>
+    <td>20 km</td>
+    </tr>
+    <tr>
+    <td><strong>E2</strong></td>
+    <td><code>4.TPRn6 A to B Road.gpx</code> _(reprise)_</td>
+    <td>292</td>
+    <td>20</td>
+    <td>271 km</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td><code>5.TPRn6 parcours B.gpx</code></td>
+    <td>316</td>
+    <td>0</td>
+    <td>247 km</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td><code>6.TPRn6 B to C Hybrid.gpx</code></td>
+    <td>377</td>
+    <td>0</td>
+    <td>185 km</td>
+    </tr>
+    <tr>
+    <td><strong>E3</strong></td>
+    <td><code>7.TPRn6 parcours C.gpx</code></td>
+    <td>563</td>
+    <td>0</td>
+    <td>276 km</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td><code>8.TPRn6 C to D.gpx</code></td>
+    <td>605</td>
+    <td>0</td>
+    <td>234 km</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td><code>9.TPRn6 parcours D.gpx</code></td>
+    <td>836</td>
+    <td>0</td>
+    <td>3 km</td>
+    </tr>
+    <tr>
+    <td><strong>E4</strong></td>
+    <td><code>9.TPRn6 parcours D.gpx</code> _(reprise)_</td>
+    <td>839</td>
+    <td>3</td>
+    <td>274 km</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td><code>10.TPRn6 D to E.gpx</code></td>
+    <td>886</td>
+    <td>0</td>
+    <td>227 km</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td><code>11.TPRn6 parcours E.gpx</code></td>
+    <td>1039</td>
+    <td>0</td>
+    <td>74 km</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td><code>12.TPRn6 E to F.gpx</code></td>
+    <td>1053</td>
+    <td>0</td>
+    <td>59 km</td>
+    </tr>
+    <tr>
+    <td><strong>E5</strong></td>
+    <td><code>12.TPRn6 E to F.gpx</code> _(reprise)_</td>
+    <td>1113</td>
+    <td>59</td>
+    <td>259 km</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td><code>13.TPRn6 Parcours F.gpx</code></td>
+    <td>1197</td>
+    <td>0</td>
+    <td>174 km</td>
+    </tr>
+    <tr>
+    <td><strong>E6</strong></td>
+    <td><code>13.TPRn6 Parcours F.gpx</code> _(reprise)_</td>
+    <td>1372</td>
+    <td>174</td>
+    <td>257 km</td>
+    </tr>
+    <tr>
+    <td><strong>E7</strong></td>
+    <td><code>13.TPRn6 Parcours F.gpx</code> _(reprise)_</td>
+    <td>1629</td>
+    <td>431</td>
+    <td>292 km</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td><code>14.TPRn6 F to End.gpx</code></td>
+    <td>1775</td>
+    <td>0</td>
+    <td>146 km</td>
+    </tr>
+    <tr>
+    <td></td>
+    <td><code>15.TPRn6 Finish.gpx</code></td>
+    <td>1887</td>
+    <td>0</td>
+    <td>33 km</td>
+    </tr>
+    </tbody></table>
+    <p>&gt; ⚠️ <strong>E1</strong> : deux changements de fichier en 2.0 km, aux cumuls 270 et 272 (<code>3.TPRn6 A.gpx</code> puis <code>4.TPRn6 A to B Road.gpx</code>). Préparer la bascule à l&#x27;avance.</p>
+    <p>&gt; ⚠️ <strong>E3</strong> change de fichier 2.7 km avant l&#x27;arrivée (<code>9.TPRn6 parcours D.gpx</code>, cumul 836). Ces derniers kilomètres se font aussi bien à vue, sans toucher au compteur.</p>
+    <p>&gt; ⚠️ <strong>E6</strong> tient entièrement dans <code>13.TPRn6 Parcours F.gpx</code> (577 km) : aucune bascule, et donc aucune lecture de la journée sur le compteur. Se repérer au cumul.</p>
+    <hr>
+    <h2>🏬 Hébergement aux villes-étapes</h2>
+    <p>&gt; Relevé OpenStreetMap dans un rayon de 3 km (<code>find_route_lodging.py</code>) enrichi par vérification web directe (<code>config/lodging_enriched.json</code>). <strong>Présence référencée, pas disponibilité :</strong> ouverture fin septembre et accueil tardif restent à confirmer par téléphone.</p>
+    <h3>Nuit 1 — Solsona (km 292 · S4 km 20, arrivée Ven 25 sept. 23h57)</h3>
+    <table><thead><tr>
+    <th>Nom</th>
+    <th>Type</th>
+    <th>Écart</th>
+    <th>Tarif</th>
+    <th>Téléphone</th>
+    <th>Accès à l&#x27;arrivée</th>
+    <th>Vélo / petit-déj</th>
+    </tr></thead><tbody>
+    <tr>
+    <td><strong>Hotel Gran Sol</strong></td>
+    <td>hotel</td>
+    <td>0.1 km</td>
+    <td>60 - 85 €</td>
+    <td><code>+34 973 48 09 75</code></td>
+    <td>🔑 réception fermée 1.9 h avant — clé ou code à convenir à la réservation</td>
+    <td>Services cyclotourisme &amp; stockage vélos disponible &lt;br&gt; Restaurant / cafétéria</td>
+    </tr>
+    <tr>
+    <td><strong>Hostal Crisami</strong></td>
+    <td>hotel</td>
+    <td>0.1 km</td>
+    <td>45 - 65 €</td>
+    <td><code>+34 973 48 04 13</code></td>
+    <td>🔑 réception fermée 4.0 h avant — clé ou code à convenir à la réservation</td>
+    <td>Établissement adapté aux sports de plein air &amp; cyclisme &lt;br&gt; Cafétéria sur place</td>
+    </tr>
+    <tr>
+    <td><strong>Sant Roc</strong></td>
+    <td>hotel</td>
+    <td>0.3 km</td>
+    <td>100 - 170 €</td>
+    <td><code>+34 973 48 00 06</code> · ⚠️ OSM <code>+34 973484003</code> · WhatsApp <code>+34 683 14 75 77</code></td>
+    <td>✅ réception 24h/24</td>
+    <td>Trastero / Local sécurisé pour rangement des vélos &lt;br&gt; Petit-déjeuner dès 07:00 / plateau sur demande</td>
+    </tr>
+    <tr>
+    <td><strong>Hotel Solsona Central</strong></td>
+    <td>hotel</td>
+    <td>0.6 km</td>
+    <td>—</td>
+    <td>—</td>
+    <td>❓ à appeler</td>
+    <td>—</td>
+    </tr>
+    <tr>
+    <td><strong>Restaurant hotel El Pi</strong></td>
+    <td>hotel</td>
+    <td>3.0 km</td>
+    <td>—</td>
+    <td>—</td>
+    <td>❓ à appeler</td>
+    <td>—</td>
+    </tr>
+    </tbody></table>
+    <p>&gt; ⚠️ <strong>Un seul accueil en direct à 23h57 un vendredi.</strong> Les autres demandent un arrangement préalable.</p>
+    <h3>Nuit 2 — Plan (km 563 · S7 km 0, arrivée Sam 26 sept. 22h06)</h3>
+    <table><thead><tr>
+    <th>Nom</th>
+    <th>Type</th>
+    <th>Écart</th>
+    <th>Tarif</th>
+    <th>Téléphone</th>
+    <th>Accès à l&#x27;arrivée</th>
+    <th>Vélo / petit-déj</th>
+    </tr></thead><tbody>
+    <tr>
+    <td><strong>Hotel Mediodía</strong></td>
+    <td>hotel</td>
+    <td>0.1 km</td>
+    <td>50 - 70 €</td>
+    <td><code>+34 974 50 60 06</code></td>
+    <td>✅ ouvert à l&#x27;arrivée</td>
+    <td>Aparcamiento seguro / Parking sécurisé couvert pour vélos &lt;br&gt; Petit-déjeuner sur place</td>
+    </tr>
+    <tr>
+    <td><strong>Apartamentos Villa de Plan</strong></td>
+    <td>apartment</td>
+    <td>0.1 km</td>
+    <td>65 - 90 €</td>
+    <td><code>+34 974 50 64 73</code> · WhatsApp <code>+34 676 95 63 40</code></td>
+    <td>⏳ ferme 24 min après l&#x27;arrivée</td>
+    <td>Appartements autonomes (vélos acceptés à l&#x27;intérieur) &lt;br&gt; Cuisine autonome équipée dans chaque appartement</td>
+    </tr>
+    <tr>
+    <td><strong>Casa Torres</strong></td>
+    <td>apartment</td>
+    <td>1.0 km</td>
+    <td>—</td>
+    <td>—</td>
+    <td>❓ à appeler</td>
+    <td>—</td>
+    </tr>
+    <tr>
+    <td><strong>Hotel Casa Anita Restaurante</strong></td>
+    <td>hotel</td>
+    <td>1.3 km</td>
+    <td>—</td>
+    <td>—</td>
+    <td>❓ à appeler</td>
+    <td>—</td>
+    </tr>
+    </tbody></table>
+    <p>&gt; Replis camping : Refugio de Lavasar (1.9 km).</p>
+    <h3>Nuit 3 — Saint-Michel / Saint-Jean-Pied-de-Port (km 839 · S9 km 3, arrivée Dim 27 sept. 20h00)</h3>
+    <table><thead><tr>
+    <th>Nom</th>
+    <th>Type</th>
+    <th>Écart</th>
+    <th>Tarif</th>
+    <th>Téléphone</th>
+    <th>Accès à l&#x27;arrivée</th>
+    <th>Vélo / petit-déj</th>
+    </tr></thead><tbody>
+    <tr>
+    <td><strong>Albergue La Coquille Napoleón</strong></td>
+    <td>hostel</td>
+    <td>0.0 km</td>
+    <td>22 - 35 €</td>
+    <td><code>+33 6 62 25 99 40</code></td>
+    <td>❓ horaires non chiffrés</td>
+    <td>Gîte d&#x27;étape sur la Route Napoléon &lt;br&gt; Formule gîte d&#x27;étape</td>
+    </tr>
+    <tr>
+    <td><strong>Albergue Ferme Ithurburia</strong></td>
+    <td>hostel</td>
+    <td>0.0 km</td>
+    <td>—</td>
+    <td><code>+33 559371117</code></td>
+    <td>❓ à appeler</td>
+    <td>—</td>
+    </tr>
+    <tr>
+    <td><strong>Maison Kaserna</strong></td>
+    <td>hostel</td>
+    <td>0.1 km</td>
+    <td>25 - 40 €</td>
+    <td><code>+33 5 59 37 65 17</code></td>
+    <td>⛔ vélos refusés</td>
+    <td>⚠️ ATTENTION : Refuge paroissial réservé EXCLUSIVEMENT aux pèlerins à pied (VÉLOS NON ACCEPTÉS) &lt;br&gt; Demi-pension gîte</td>
+    </tr>
+    <tr>
+    <td><strong>Villa Goxoki</strong></td>
+    <td>hostel</td>
+    <td>0.1 km</td>
+    <td>—</td>
+    <td><code>+33 6 73 89 49 21</code></td>
+    <td>❓ à appeler</td>
+    <td>—</td>
+    </tr>
+    <tr>
+    <td><strong>Maison Donamaria</strong></td>
+    <td>guest_house</td>
+    <td>0.3 km</td>
+    <td>—</td>
+    <td><code>+33559370232;+33661902921</code></td>
+    <td>❓ à appeler</td>
+    <td>—</td>
+    </tr>
+    <tr>
+    <td><strong>Xoko Goxoa</strong></td>
+    <td>hotel</td>
+    <td>1.3 km</td>
+    <td>—</td>
+    <td><code>+33 5 59 37 06 34</code></td>
+    <td>❓ à appeler</td>
+    <td>—</td>
+    </tr>
+    <tr>
+    <td><strong>Hôtel des Remparts (SJPdP)</strong></td>
+    <td>hors OSM</td>
+    <td>—</td>
+    <td>65 - 85 €</td>
+    <td><code>+33 5 59 37 13 79</code> · WhatsApp <code>+33 6 76 12 28 58</code></td>
+    <td>❓ horaires non chiffrés</td>
+    <td>Local matériel fermé &amp; sécurisé pour vélos &lt;br&gt; Petit-déjeuner hôtel</td>
+    </tr>
+    </tbody></table>
+    <p>&gt; Les 1 dernière(s) ligne(s) viennent de la vérification manuelle sans correspondance dans le relevé OSM : écart à la trace non mesuré.</p>
+    <p>&gt; Replis camping : Camping Municipal Plaza Berri (0.2 km), Gite Zazpiak-Bat (0.2 km), Gîte Urondoa (1.6 km).</p>
+    <p>&gt; ❓ <strong>Aucun horaire chiffré pour cette étape</strong> : rien ne dit si quelqu&#x27;un accueille à 20h00 un dimanche. À régler au téléphone.</p>
+    <h3>Nuit 4 — Saint-Jean-de-Luz / Ciboure (km 1113 · S12 km 59, arrivée Lun 28 sept. 19h46)</h3>
+    <table><thead><tr>
+    <th>Nom</th>
+    <th>Type</th>
+    <th>Écart</th>
+    <th>Tarif</th>
+    <th>Téléphone</th>
+    <th>Accès à l&#x27;arrivée</th>
+    <th>Vélo / petit-déj</th>
+    </tr></thead><tbody>
+    <tr>
+    <td><strong>La Caravelle</strong></td>
+    <td>hotel</td>
+    <td>0.0 km</td>
+    <td>—</td>
+    <td><code>+33 5 59 47 18 05</code></td>
+    <td>❓ à appeler</td>
+    <td>—</td>
+    </tr>
+    <tr>
+    <td><strong>Hôtel de Paris</strong></td>
+    <td>hotel</td>
+    <td>0.0 km</td>
+    <td>64 € (chambre double)</td>
+    <td><code>+33 5 59 85 20 20</code></td>
+    <td>⏳ ferme 14 min après l&#x27;arrivée</td>
+    <td>Garage sécurisé pour les vélos (référencé accueil vélo) &lt;br&gt; Buffet 07h30–10h30 — après le départ prévu, prévoir la veille</td>
+    </tr>
+    <tr>
+    <td><strong>Hôtel Le relais de Saint Jacques</strong></td>
+    <td>hotel</td>
+    <td>0.0 km</td>
+    <td>à partir de 133 €</td>
+    <td><code>+33 5 59 26 02 55</code></td>
+    <td>🔑 réception fermée 0.8 h avant — clé ou code à convenir à la réservation</td>
+    <td>Rangements pour vélos ; parking hôtel sur réservation 20 €, ou parking gratuit de 450 places derrière la gare &lt;br&gt; Bouilloire en chambre ; petit-déjeuner après le départ prévu, prévoir la veille</td>
+    </tr>
+    <tr>
+    <td><strong>Hôtel Colbert</strong></td>
+    <td>hotel</td>
+    <td>0.0 km</td>
+    <td>—</td>
+    <td><code>+33 5 59 26 31 99</code></td>
+    <td>✅ réception 24h/24</td>
+    <td>Vélo entreposé au sous-sol sur demande (confirmé par la réception) + bagagerie fermée à clé 24h/24 &lt;br&gt; Buffet 07h00–10h30 — après le départ prévu ; bouilloire en chambre, prévoir la veille</td>
+    </tr>
+    <tr>
+    <td><strong>Hôtel Chantaco Golf et Wellness</strong></td>
+    <td>hotel</td>
+    <td>0.1 km</td>
+    <td>—</td>
+    <td><code>+33 5 59 41 32 87</code></td>
+    <td>❓ à appeler</td>
+    <td>—</td>
+    </tr>
+    <tr>
+    <td><strong>Ibis Ciboure Saint-Jean-de-Luz</strong></td>
+    <td>hotel</td>
+    <td>0.1 km</td>
+    <td>—</td>
+    <td><code>+33 5 59 41 76 80</code></td>
+    <td>❓ à appeler</td>
+    <td>—</td>
+    </tr>
+    <tr>
+    <td><strong>ibis budget Ciboure Saint-Jean-de-Luz</strong></td>
+    <td>hors OSM</td>
+    <td>—</td>
+    <td>—</td>
+    <td>—</td>
+    <td>✅ réception 24h/24</td>
+    <td>Vélo rentré dans un local sur demande (retour client cycliste) ; parking privé gratuit fermé &lt;br&gt; Petit-déjeuner sur place, heure d&#x27;ouverture à confirmer ; bar dans l&#x27;hôtel</td>
+    </tr>
+    </tbody></table>
+    <p>&gt; Les 1 dernière(s) ligne(s) viennent de la vérification manuelle sans correspondance dans le relevé OSM : écart à la trace non mesuré.</p>
+    <p>&gt; Replis camping : Centre de vacances Léo Lagrange Borda Zahar (0.2 km), Suhiberry (1.3 km), Le Bord de Mer (2.1 km).</p>
+    <h3>Nuit 5 — Esquièze-Sère / Luz-Saint-Sauveur (km 1372 · S13 km 174, arrivée Mar 29 sept. 19h29)</h3>
+    <table><thead><tr>
+    <th>Nom</th>
+    <th>Type</th>
+    <th>Écart</th>
+    <th>Tarif</th>
+    <th>Téléphone</th>
+    <th>Accès à l&#x27;arrivée</th>
+    <th>Vélo / petit-déj</th>
+    </tr></thead><tbody>
+    <tr>
+    <td><strong>Hôtel Tourmalet - Pyrénées</strong></td>
+    <td>hotel</td>
+    <td>0.0 km</td>
+    <td>55 - 75 €</td>
+    <td><code>+33 5 62 92 80 09</code> · mobile <code>+336 08 16 49 79</code></td>
+    <td>❓ horaires non chiffrés</td>
+    <td>🌟 LABELLISÉ CYCLISME : Garaje fermé/surveillé + station de lavage + pied de réparation + séchoir chaussures &lt;br&gt; Formule vélo &amp; demi-pension</td>
+    </tr>
+    <tr>
+    <td><strong>Hôtel des Cimes</strong></td>
+    <td>hotel</td>
+    <td>0.1 km</td>
+    <td>—</td>
+    <td>—</td>
+    <td>❓ à appeler</td>
+    <td>—</td>
+    </tr>
+    <tr>
+    <td><strong>Les Templiers</strong></td>
+    <td>hotel</td>
+    <td>0.1 km</td>
+    <td>—</td>
+    <td>—</td>
+    <td>❓ à appeler</td>
+    <td>—</td>
+    </tr>
+    <tr>
+    <td><strong>Le Montaigu</strong></td>
+    <td>hotel</td>
+    <td>0.1 km</td>
+    <td>—</td>
+    <td>—</td>
+    <td>❓ à appeler</td>
+    <td>—</td>
+    </tr>
+    <tr>
+    <td><strong>Auberge de Viella</strong></td>
+    <td>hostel</td>
+    <td>0.1 km</td>
+    <td>—</td>
+    <td>—</td>
+    <td>❓ à appeler</td>
+    <td>—</td>
+    </tr>
+    <tr>
+    <td><strong>Les Cascades</strong></td>
+    <td>guest_house</td>
+    <td>0.3 km</td>
+    <td>—</td>
+    <td>—</td>
+    <td>❓ à appeler</td>
+    <td>—</td>
+    </tr>
+    </tbody></table>
+    <p>&gt; Replis camping : Camping Le Bastan (0.0 km), La Grange Bigourdane (0.1 km), Camping le Bergons (0.1 km).</p>
+    <p>&gt; ❓ <strong>Aucun horaire chiffré pour cette étape</strong> : rien ne dit si quelqu&#x27;un accueille à 19h29 un mardi. À régler au téléphone.</p>
+    <h3>Nuit 6 — Tarascon-sur-Ariège / Ax-les-Thermes (km 1629 · S13 km 431, arrivée Mer 30 sept. 22h14)</h3>
+    <table><thead><tr>
+    <th>Nom</th>
+    <th>Type</th>
+    <th>Écart</th>
+    <th>Tarif</th>
+    <th>Téléphone</th>
+    <th>Accès à l&#x27;arrivée</th>
+    <th>Vélo / petit-déj</th>
+    </tr></thead><tbody>
+    <tr>
+    <td><strong>Hostellerie de la poste</strong></td>
+    <td>hotel</td>
+    <td>0.0 km</td>
+    <td>55 - 75 €</td>
+    <td><code>+33 5 61 05 60 41</code> · ⚠️ OSM <code>+33561017945</code></td>
+    <td>❓ horaires non chiffrés</td>
+    <td>Garage à vélos fermé et gratuit (annexe hôtel) &lt;br&gt; Petit-déjeuner sur place</td>
+    </tr>
+    <tr>
+    <td><strong>Le Manoir d&#x27;Agnès</strong></td>
+    <td>hotel</td>
+    <td>0.0 km</td>
+    <td>90 - 120 €</td>
+    <td><code>+33 5 61 02 32 81</code></td>
+    <td>🔑 réception fermée 0.7 h avant — clé ou code à convenir à la réservation</td>
+    <td>🌟 LABELLISÉ ACCUEIL VÉLO : Local à vélos sécurisé + kit réparation + pompe &lt;br&gt; Petit-déjeuner buffet</td>
+    </tr>
+    <tr>
+    <td><strong>Hôtel Confort</strong></td>
+    <td>hotel</td>
+    <td>0.0 km</td>
+    <td>—</td>
+    <td>—</td>
+    <td>❓ à appeler</td>
+    <td>—</td>
+    </tr>
+    <tr>
+    <td><strong>Les chataigniers de Florac</strong></td>
+    <td>guest_house</td>
+    <td>1.1 km</td>
+    <td>—</td>
+    <td>—</td>
+    <td>❓ à appeler</td>
+    <td>—</td>
+    </tr>
+    <tr>
+    <td><strong>Le Jardin d’En Vie</strong></td>
+    <td>guest_house</td>
+    <td>1.2 km</td>
+    <td>—</td>
+    <td>—</td>
+    <td>❓ à appeler</td>
+    <td>—</td>
+    </tr>
+    <tr>
+    <td><strong>Domaine Fournié</strong></td>
+    <td>guest_house</td>
+    <td>1.3 km</td>
+    <td>—</td>
+    <td>—</td>
+    <td>❓ à appeler</td>
+    <td>—</td>
+    </tr>
+    </tbody></table>
+    <p>&gt; Replis camping : Pré Lombard (0.5 km), Le Sédour (1.1 km), Gîte du couchant (1.6 km).</p>
+    <p>&gt; 🔑 <strong>Personne à la réception à 22h14 un mercredi</strong> : les 1 option(s) vérifiée(s) exigent une clé ou un code convenu à la réservation. Réservable, mais pas improvisable.</p>
+    <p>&gt; Levier : <strong>partir 0 h 44 plus tôt</strong> (05h30 → 04h46) ferait arriver avant la fermeture de <strong>Le Manoir d&#x27;Agnès</strong>, et donc entrer sans arrangement. Coût : autant de sommeil en moins la nuit précédente. ⚠️ Mais cette journée-là commence par monter à <strong>2089 m</strong> avant une descente à <strong>-9.2 %</strong> : avancer le départ déplace cette descente vers le froid et la nuit noire au lieu de l&#x27;en sortir. Le levier coûte ici plus cher qu&#x27;ailleurs.</p>
+    <p>&gt; ☕ <strong>Aucun petit-déjeuner servi avant le départ, sur aucune étape vérifiée.</strong> Le plus matinal est <strong>Sant Roc Hotel Boutique</strong> à 07h00, soit 3 h 30 après le départ le plus matinal du plan, 03h30. Le premier repas de chaque journée se prépare donc la veille au soir : c&#x27;est une contrainte de ravitaillement, pas un détail d&#x27;hôtel. Demander systématiquement un plateau ou un sac à emporter, et vérifier la bouilloire en chambre.</p>
+    <p>&gt; ℹ️ <strong>Fiches vérifiées sans étape correspondante</strong> — un arrêt a été déplacé depuis leur relevé. Elles restent valables comme repli en route, pas comme ville-étape : <strong>Souraïde / Espelette</strong>.</p>
+    <hr>
+    <h2>☎️ Checklist d&#x27;appels</h2>
+    <p>Aucune ligne du tableau précédent n&#x27;a été confirmée de vive voix : les horaires viennent des sites officiels, qui ne disent pas ce qui se passe quand on arrive à 23 h à vélo. Cinq questions suffisent, les mêmes partout — l&#x27;heure d&#x27;arrivée et l&#x27;heure de départ de chaque nuit sont rappelées dans les titres ci-dessous :</p>
+    <ol>
+    <li><strong>Accueil à l&#x27;heure d&#x27;arrivée prévue ?</strong> Si la réception est fermée : boîte à clés, digicode, code par SMS ?</li>
+    <li><strong>Le vélo rentre-t-il ?</strong> Chambre ou local fermé à clé — un parking ouvert ne compte pas.</li>
+    <li><strong>Peut-on repartir à l&#x27;heure de départ prévue, vélo compris ?</strong> C&#x27;est la question symétrique de la première, et elle se pose même quand l&#x27;accueil du soir est réglé : un vélo enfermé dans une cave sans veilleur ni code ne sort pas avant l&#x27;ouverture. À poser en donnant l&#x27;heure exacte.</li>
+    <li><strong>Petit-déjeuner</strong> possible à cette heure-là, ou de quoi emporter la veille ?</li>
+    <li><strong>Annulation gratuite jusqu&#x27;à quand ?</strong> Le plan peut basculer sur 8 jours en course : une nuit non annulable gratuitement enlève cette liberté.</li>
+    </ol>
+    <h3>Nuit 1 — Solsona · arrivée Ven 25 sept. 23h57, départ Sam 26 sept. 05h30</h3>
+    <table><thead><tr>
+    <th>Ordre</th>
+    <th>Établissement</th>
+    <th>Numéros</th>
+    <th>Pourquoi cet ordre</th>
+    </tr></thead><tbody>
+    <tr>
+    <td>1</td>
+    <td><strong>Sant Roc</strong></td>
+    <td><code>+34 973 48 00 06</code> · ⚠️ OSM <code>+34 973484003</code> · WhatsApp <code>+34 683 14 75 77</code></td>
+    <td>accueil en direct à l&#x27;arrivée</td>
+    </tr>
+    <tr>
+    <td>2</td>
+    <td><strong>Hotel Gran Sol</strong></td>
+    <td><code>+34 973 48 09 75</code></td>
+    <td>réception fermée : demander clé, digicode ou code SMS</td>
+    </tr>
+    <tr>
+    <td>3</td>
+    <td><strong>Hostal Crisami</strong></td>
+    <td><code>+34 973 48 04 13</code></td>
+    <td>réception fermée : demander clé, digicode ou code SMS</td>
+    </tr>
+    </tbody></table>
+    <h3>Nuit 2 — Plan · arrivée Sam 26 sept. 22h06, départ Dim 27 sept. 05h30</h3>
+    <table><thead><tr>
+    <th>Ordre</th>
+    <th>Établissement</th>
+    <th>Numéros</th>
+    <th>Pourquoi cet ordre</th>
+    </tr></thead><tbody>
+    <tr>
+    <td>1</td>
+    <td><strong>Hotel Mediodía</strong></td>
+    <td><code>+34 974 50 60 06</code></td>
+    <td>accueil en direct à l&#x27;arrivée</td>
+    </tr>
+    <tr>
+    <td>2</td>
+    <td><strong>Apartamentos Villa de Plan</strong></td>
+    <td><code>+34 974 50 64 73</code> · WhatsApp <code>+34 676 95 63 40</code></td>
+    <td>ouvert de justesse</td>
+    </tr>
+    </tbody></table>
+    <h3>Nuit 3 — Saint-Michel / Saint-Jean-Pied-de-Port · arrivée Dim 27 sept. 20h00, départ Lun 28 sept. 05h30</h3>
+    <table><thead><tr>
+    <th>Ordre</th>
+    <th>Établissement</th>
+    <th>Numéros</th>
+    <th>Pourquoi cet ordre</th>
+    </tr></thead><tbody>
+    <tr>
+    <td>1</td>
+    <td><strong>Albergue La Coquille Napoleón</strong></td>
+    <td><code>+33 6 62 25 99 40</code></td>
+    <td>horaires inconnus</td>
+    </tr>
+    <tr>
+    <td>2</td>
+    <td><strong>Hôtel des Remparts (SJPdP)</strong></td>
+    <td><code>+33 5 59 37 13 79</code> · WhatsApp <code>+33 6 76 12 28 58</code></td>
+    <td>horaires inconnus</td>
+    </tr>
+    <tr>
+    <td>3</td>
+    <td><strong>Albergue Ferme Ithurburia</strong></td>
+    <td><code>+33 559371117</code></td>
+    <td>non vérifié</td>
+    </tr>
+    <tr>
+    <td>4</td>
+    <td><strong>Villa Goxoki</strong></td>
+    <td><code>+33 6 73 89 49 21</code></td>
+    <td>non vérifié</td>
+    </tr>
+    </tbody></table>
+    <h3>Nuit 4 — Saint-Jean-de-Luz / Ciboure · arrivée Lun 28 sept. 19h46, départ Mar 29 sept. 03h30</h3>
+    <table><thead><tr>
+    <th>Ordre</th>
+    <th>Établissement</th>
+    <th>Numéros</th>
+    <th>Pourquoi cet ordre</th>
+    </tr></thead><tbody>
+    <tr>
+    <td>1</td>
+    <td><strong>Hôtel Colbert</strong></td>
+    <td><code>+33 5 59 26 31 99</code></td>
+    <td>accueil en direct à l&#x27;arrivée</td>
+    </tr>
+    <tr>
+    <td>2</td>
+    <td><strong>Hôtel de Paris</strong></td>
+    <td><code>+33 5 59 85 20 20</code></td>
+    <td>ouvert de justesse</td>
+    </tr>
+    <tr>
+    <td>3</td>
+    <td><strong>Hôtel Le relais de Saint Jacques</strong></td>
+    <td><code>+33 5 59 26 02 55</code></td>
+    <td>réception fermée : demander clé, digicode ou code SMS</td>
+    </tr>
+    <tr>
+    <td>4</td>
+    <td><strong>La Caravelle</strong></td>
+    <td><code>+33 5 59 47 18 05</code></td>
+    <td>non vérifié</td>
+    </tr>
+    </tbody></table>
+    <h3>Nuit 5 — Esquièze-Sère / Luz-Saint-Sauveur · arrivée Mar 29 sept. 19h29, départ Mer 30 sept. 05h30</h3>
+    <table><thead><tr>
+    <th>Ordre</th>
+    <th>Établissement</th>
+    <th>Numéros</th>
+    <th>Pourquoi cet ordre</th>
+    </tr></thead><tbody>
+    <tr>
+    <td>1</td>
+    <td><strong>Hôtel Tourmalet - Pyrénées</strong></td>
+    <td><code>+33 5 62 92 80 09</code> · mobile <code>+336 08 16 49 79</code></td>
+    <td>horaires inconnus</td>
+    </tr>
+    </tbody></table>
+    <h3>Nuit 6 — Tarascon-sur-Ariège / Ax-les-Thermes · arrivée Mer 30 sept. 22h14, départ Jeu 1 oct. 05h30</h3>
+    <table><thead><tr>
+    <th>Ordre</th>
+    <th>Établissement</th>
+    <th>Numéros</th>
+    <th>Pourquoi cet ordre</th>
+    </tr></thead><tbody>
+    <tr>
+    <td>1</td>
+    <td><strong>Le Manoir d&#x27;Agnès</strong></td>
+    <td><code>+33 5 61 02 32 81</code></td>
+    <td>réception fermée : demander clé, digicode ou code SMS</td>
+    </tr>
+    <tr>
+    <td>2</td>
+    <td><strong>Hostellerie de la poste</strong></td>
+    <td><code>+33 5 61 05 60 41</code> · ⚠️ OSM <code>+33561017945</code></td>
+    <td>horaires inconnus</td>
+    </tr>
+    </tbody></table>
+    <h3>Numéros à trancher</h3>
+    <p>Fiche et OpenStreetMap ne disent pas la même chose ; l&#x27;un des deux est périmé. Le premier appel règle la question.</p>
+    <ul>
+    <li>Nuit 1 · <strong>Sant Roc</strong> : fiche <code>+34 973 48 00 06</code> contre OSM <code>+34 973484003</code></li>
+    <li>Nuit 6 · <strong>Hostellerie de la poste</strong> : fiche <code>+33 5 61 05 60 41</code> contre OSM <code>+33561017945</code></li>
+    </ul>
+    <p>&gt; <strong>16 appels</strong> au total, dont les plus urgents sont ceux des nuits sans option confirmée ouverte. À passer avant le départ : une fois en course, la marge pour chercher un lit de repli est nulle.</p>
+    <hr>
+    <h2>📍 Repères, ravitos et control points</h2>
+    <table><thead><tr>
+    <th>Compteur (fichier GPX + km)</th>
+    <th>Cumul</th>
+    <th>Repère</th>
+    <th>Alt.</th>
+    <th>Écart trace</th>
+    <th>Notes</th>
+    </tr></thead><tbody>
+    <tr>
+    <td><code>1.TPRn6 Start parcours.gpx</code> — <strong>km 3</strong></td>
+    <td><strong>km 3</strong></td>
+    <td><strong>Girona (Départ Officiel)</strong></td>
+    <td>82 m</td>
+    <td>0.5 km</td>
+    <td>Départ vendredi 25 sept. à 07h00. Supermarchés &amp; boutiques vélo.</td>
+    </tr>
+    <tr>
+    <td><code>1.TPRn6 Start parcours.gpx</code> — <strong>km 72</strong></td>
+    <td><strong>km 72</strong></td>
+    <td><strong>Sant Feliu de Guíxols</strong></td>
+    <td>13 m</td>
+    <td>sur la trace</td>
+    <td>Côte méditerranéenne, boulangeries, épiceries.</td>
+    </tr>
+    <tr>
+    <td><code>2.TPRn6 start to parcours A road.gpx</code> — <strong>km 1</strong></td>
+    <td><strong>km 105</strong></td>
+    <td><strong>Lloret de Mar</strong></td>
+    <td>10 m</td>
+    <td>sur la trace</td>
+    <td>Dernière grande ville avant la section isolée des Guilleries (129 km).</td>
+    </tr>
+    <tr>
+    <td><code>2.TPRn6 start to parcours A road.gpx</code> — <strong>km 123</strong></td>
+    <td><strong>km 226</strong></td>
+    <td><strong>Puig-reig</strong></td>
+    <td>591 m</td>
+    <td>⚠️ <strong>5.9 km</strong></td>
+    <td>⚠️ <strong>HORS TRACE — détour de 5.9 km (12 km aller-retour). Ne pas compter dessus.</strong> Sortie Berguedà, supermarchés, restaurants.</td>
+    </tr>
+    <tr>
+    <td><code>4.TPRn6 A to B Road.gpx</code> — <strong>km 43</strong></td>
+    <td><strong>km 314</strong></td>
+    <td><strong>Sant Llorenç de Morunys</strong></td>
+    <td>1369 m</td>
+    <td>3.3 km</td>
+    <td>Hôtels, pharmacies, bars.</td>
+    </tr>
+    <tr>
+    <td><code>5.TPRn6 parcours B.gpx</code> — <strong>km 44</strong></td>
+    <td><strong>km 360</strong></td>
+    <td><strong>Coll de Nargó</strong></td>
+    <td>552 m</td>
+    <td>sur la trace</td>
+    <td>Vallée du Segre, station-service, épicerie.</td>
+    </tr>
+    <tr>
+    <td><code>6.TPRn6 B to C Hybrid.gpx</code> — <strong>km 23</strong></td>
+    <td><strong>km 401</strong></td>
+    <td><strong>CP1 Pessonada (Control Point 1)</strong></td>
+    <td>883 m</td>
+    <td>sur la trace</td>
+    <td>CP1 Officiel orga. Contrôle passif par photo/GPS.</td>
+    </tr>
+    <tr>
+    <td><code>6.TPRn6 B to C Hybrid.gpx</code> — <strong>km 33</strong></td>
+    <td><strong>km 410</strong></td>
+    <td><strong>Tremp / La Pobla de Segur</strong></td>
+    <td>519 m</td>
+    <td>sur la trace</td>
+    <td>Gros ravito après CP1. Supermarchés Mercadona/BonÀrea.</td>
+    </tr>
+    <tr>
+    <td><code>6.TPRn6 B to C Hybrid.gpx</code> — <strong>km 72</strong></td>
+    <td><strong>km 449</strong></td>
+    <td><strong>El Pont de Suert</strong></td>
+    <td>858 m</td>
+    <td>sur la trace</td>
+    <td>Dernière grande ville avant la haute vallée de Ribagorça.</td>
+    </tr>
+    <tr>
+    <td><code>6.TPRn6 B to C Hybrid.gpx</code> — <strong>km 115</strong></td>
+    <td><strong>km 492</strong></td>
+    <td><strong>Castejón de Sos</strong></td>
+    <td>792 m</td>
+    <td>⚠️ <strong>12.7 km</strong></td>
+    <td>⚠️ <strong>HORS TRACE — détour de 12.7 km (25 km aller-retour). Ne pas compter dessus.</strong> Vallée de Benasque, boulangeries, fontaine.</td>
+    </tr>
+    <tr>
+    <td><code>8.TPRn6 C to D.gpx</code> — <strong>km 20</strong></td>
+    <td><strong>km 625</strong></td>
+    <td><strong>Sarvisé / Hostal Pirineos</strong></td>
+    <td>865 m</td>
+    <td>sur la trace</td>
+    <td>CP2 Officiel orga. Cut-off Dimanche 27/09 à 16h00.</td>
+    </tr>
+    <tr>
+    <td><code>8.TPRn6 C to D.gpx</code> — <strong>km 56</strong></td>
+    <td><strong>km 661</strong></td>
+    <td><strong>Sabiñánigo / Jaca</strong></td>
+    <td>793 m</td>
+    <td>sur la trace</td>
+    <td>Dernier gros point de ravito espagnol avant 100 km.</td>
+    </tr>
+    <tr>
+    <td><code>8.TPRn6 C to D.gpx</code> — <strong>km 178</strong></td>
+    <td><strong>km 783</strong></td>
+    <td><strong>Tardets / Mauléon</strong></td>
+    <td>223 m</td>
+    <td>sur la trace</td>
+    <td>Entrée en France (Soule), commerces français.</td>
+    </tr>
+    <tr>
+    <td><code>10.TPRn6 D to E.gpx</code> — <strong>km 42</strong></td>
+    <td><strong>km 928</strong></td>
+    <td><strong>Pamplona (Navarre)</strong></td>
+    <td>435 m</td>
+    <td>2.2 km</td>
+    <td>Ville H24, épiceries de nuit, pharmacies.</td>
+    </tr>
+    <tr>
+    <td><code>10.TPRn6 D to E.gpx</code> — <strong>km 113</strong></td>
+    <td><strong>km 999</strong></td>
+    <td><strong>Tolosa</strong></td>
+    <td>79 m</td>
+    <td>sur la trace</td>
+    <td>Pays Basque espagnol, ravito avant CP3.</td>
+    </tr>
+    <tr>
+    <td><code>10.TPRn6 D to E.gpx</code> — <strong>km 149</strong></td>
+    <td><strong>km 1035</strong></td>
+    <td><strong>CP3 Gran Camping Zarautz</strong></td>
+    <td>119 m</td>
+    <td>sur la trace</td>
+    <td>CP3 Officiel orga. Cut-off Mardi 29/09 à 09h00.</td>
+    </tr>
+    <tr>
+    <td><code>12.TPRn6 E to F.gpx</code> — <strong>km 89</strong></td>
+    <td><strong>km 1142</strong></td>
+    <td><strong>Cambo-les-Bains</strong></td>
+    <td>82 m</td>
+    <td>3.0 km</td>
+    <td>Dernière ville française avant la traversée d&#x27;Iraty (104 km).</td>
+    </tr>
+    <tr>
+    <td><code>12.TPRn6 E to F.gpx</code> — <strong>km 119</strong></td>
+    <td><strong>km 1172</strong></td>
+    <td><strong>Saint-Jean-Pied-de-Port</strong></td>
+    <td>173 m</td>
+    <td>sur la trace</td>
+    <td>Hôtels, boulangeries, matériel.</td>
+    </tr>
+    <tr>
+    <td><code>13.TPRn6 Parcours F.gpx</code> — <strong>km 18</strong></td>
+    <td><strong>km 1215</strong></td>
+    <td><strong>Larrau</strong></td>
+    <td>630 m</td>
+    <td>sur la trace</td>
+    <td>Village de montagne isolé. Horaires d&#x27;ouverture restreints.</td>
+    </tr>
+    <tr>
+    <td><code>13.TPRn6 Parcours F.gpx</code> — <strong>km 112</strong></td>
+    <td><strong>km 1309</strong></td>
+    <td><strong>Laruns (Vallée d&#x27;Ossau)</strong></td>
+    <td>490 m</td>
+    <td>0.8 km</td>
+    <td>Fin du trou d&#x27;autonomie d&#x27;Iraty. Supermarché Carrefour Contact.</td>
+    </tr>
+    <tr>
+    <td><code>13.TPRn6 Parcours F.gpx</code> — <strong>km 158</strong></td>
+    <td><strong>km 1355</strong></td>
+    <td><strong>Argelès-Gazost / Luz-Saint-Sauveur</strong></td>
+    <td>637 m</td>
+    <td>1.8 km</td>
+    <td>Vallée des gaves, ravito très dense au pied du Tourmalet.</td>
+    </tr>
+    <tr>
+    <td><code>13.TPRn6 Parcours F.gpx</code> — <strong>km 210</strong></td>
+    <td><strong>km 1408</strong></td>
+    <td><strong>Sainte-Marie-de-Campan</strong></td>
+    <td>858 m</td>
+    <td>sur la trace</td>
+    <td>Pied est du Tourmalet et pied ouest d&#x27;Aspin. Épicerie/boulangerie.</td>
+    </tr>
+    <tr>
+    <td><code>13.TPRn6 Parcours F.gpx</code> — <strong>km 273</strong></td>
+    <td><strong>km 1470</strong></td>
+    <td><strong>Bagnères-de-Luchon</strong></td>
+    <td>631 m</td>
+    <td>sur la trace</td>
+    <td>Hôtels, restaurants, pharmacies.</td>
+    </tr>
+    <tr>
+    <td><code>13.TPRn6 Parcours F.gpx</code> — <strong>km 368</strong></td>
+    <td><strong>km 1565</strong></td>
+    <td><strong>Seix (Ariège)</strong></td>
+    <td>514 m</td>
+    <td>sur la trace</td>
+    <td>Cœur du Couserans. Alimentation générale.</td>
+    </tr>
+    <tr>
+    <td><code>13.TPRn6 Parcours F.gpx</code> — <strong>km 431</strong></td>
+    <td><strong>km 1629</strong></td>
+    <td><strong>Tarascon-sur-Ariège / Ax-les-Thermes</strong></td>
+    <td>474 m</td>
+    <td>sur la trace</td>
+    <td>Vallée de l&#x27;Ariège, accès gare et supermarchés.</td>
+    </tr>
+    <tr>
+    <td><code>13.TPRn6 Parcours F.gpx</code> — <strong>km 541</strong></td>
+    <td><strong>km 1738</strong></td>
+    <td><strong>Mont-Louis / Puigcerdà</strong></td>
+    <td>1579 m</td>
+    <td>sur la trace</td>
+    <td>Cerdagne, avant l&#x27;ascension du Coll de Pal (2 194 m).</td>
+    </tr>
+    <tr>
+    <td><code>14.TPRn6 F to End.gpx</code> — <strong>km 51</strong></td>
+    <td><strong>km 1826</strong></td>
+    <td><strong>Ripoll / Olot</strong></td>
+    <td>929 m</td>
+    <td>sur la trace</td>
+    <td>Hôtels Bed &amp; Bike.</td>
+    </tr>
+    <tr>
+    <td><code>15.TPRn6 Finish.gpx</code> — <strong>km 33</strong></td>
+    <td><strong>km 1921</strong></td>
+    <td><strong>Girona (Arrivée Finale 🏆)</strong></td>
+    <td>76 m</td>
+    <td>sur la trace</td>
+    <td>Finish line officielle de la TransPyrenees Race No. 6 !</td>
+    </tr>
+    </tbody></table>
+    <p>&gt; ⚠️ <strong>2 repère(s) au-delà du seuil de 5 km</strong> (règle 5) : Puig-reig (5.9 km), Castejón de Sos (12.7 km). Traiter les tronçons concernés comme des sections en autonomie.</p>
+    <hr>
+    <h2>🏁 Control points et cut-offs</h2>
+    <table><thead><tr>
+    <th>Control point</th>
+    <th>Km</th>
+    <th>Compteur</th>
+    <th>Étape</th>
+    <th>Passage modélisé</th>
+    <th>Cut-off</th>
+    <th>Marge</th>
+    </tr></thead><tbody>
+    <tr>
+    <td><strong>CP1 Pessonada</strong></td>
+    <td>401</td>
+    <td>S6 km 23</td>
+    <td>E2</td>
+    <td>Sam 26 sept. 12h56</td>
+    <td>aucun (auto-validation)</td>
+    <td>—</td>
+    </tr>
+    <tr>
+    <td><strong>CP2 Sarvise (Hostal Pirineos)</strong></td>
+    <td>625</td>
+    <td>S8 km 20</td>
+    <td>E3</td>
+    <td>Dim 27 sept. 08h56</td>
+    <td>Dim 27 sept. 16h00</td>
+    <td><strong>+7.1 h</strong></td>
+    </tr>
+    <tr>
+    <td><strong>CP3 Gran Camping Zarautz</strong></td>
+    <td>1035</td>
+    <td>S10 km 149</td>
+    <td>E4</td>
+    <td>Lun 28 sept. 15h49</td>
+    <td>Mar 29 sept. 09h00</td>
+    <td><strong>+17.2 h</strong></td>
+    </tr>
+    </tbody></table>
+    <p>&gt; Une fermeture ratée ne disqualifie pas : elle coûte le <strong>General Classification</strong> (pas de temps officiel, retrait du processus de validation), le <strong>Race Finish</strong> restant acquis si les 10 règles sont respectées. Cut-off global GC : <strong>samedi 3 octobre 23h59 CEST</strong>.</p>
+    <hr>
+    <h2>🕰️ Marges et bascule 8 jours</h2>
+    <p>Le plan n&#x27;est pas également serré du début à la fin. Chaque échéance n&#x27;ajoute que ce qui reste après la précédente :</p>
+    <table><thead><tr>
+    <th>Échéance</th>
+    <th>Km</th>
+    <th>Marge cumulée</th>
+    <th>Marge gagnée sur le tronçon précédent</th>
+    </tr></thead><tbody>
+    <tr>
+    <td><strong>CP2 Sarvise (Hostal Pirineos)</strong></td>
+    <td>625</td>
+    <td>+7.1 h</td>
+    <td>+7.1 h</td>
+    </tr>
+    <tr>
+    <td><strong>CP3 Gran Camping Zarautz</strong></td>
+    <td>1035</td>
+    <td>+17.2 h</td>
+    <td>+10.1 h</td>
+    </tr>
+    <tr>
+    <td><strong>Arrivée / cut-off GC</strong></td>
+    <td>1921</td>
+    <td>+49.2 h</td>
+    <td>+32.1 h</td>
+    </tr>
+    </tbody></table>
+    <p>&gt; Tout le serrage est avant <strong>CP3</strong> (km 1035, E4). Après CP3 il n&#x27;y a plus aucun contrôle horaire : seulement le cut-off GC, sur lequel le plan a <strong>32 h</strong> d&#x27;avance supplémentaire. Autrement dit, la fatigue n&#x27;a le droit de coûter cher que dans les trois premiers jours ; passé CP3 elle ne coûte presque rien.</p>
+    <h3>Heure limite d&#x27;arrivée à chaque étape</h3>
+    <p>Au-delà de cette heure, finir dans les temps impose 5 h de sommeil par nuit jusqu&#x27;à Gérone. C&#x27;est le signal de bascule, pas un objectif.</p>
+    <table><thead><tr>
+    <th>Étape</th>
+    <th>Km</th>
+    <th>Compteur</th>
+    <th>Arrivée prévue</th>
+    <th>Retard absorbable</th>
+    <th>Heure limite</th>
+    </tr></thead><tbody>
+    <tr>
+    <td><strong>E1 Solsona</strong></td>
+    <td>292</td>
+    <td>S4 km 20</td>
+    <td>Ven 25 sept. 23h57</td>
+    <td><strong>7.5 h</strong></td>
+    <td>Sam 26 sept. 07h27</td>
+    </tr>
+    <tr>
+    <td><strong>E2 Plan</strong></td>
+    <td>563</td>
+    <td>S7 km 0</td>
+    <td>Sam 26 sept. 22h06</td>
+    <td><strong>8.2 h</strong></td>
+    <td>Dim 27 sept. 06h18</td>
+    </tr>
+    <tr>
+    <td><strong>E3 Saint-Michel / Saint-Jean-Pied-de-Port</strong></td>
+    <td>839</td>
+    <td>S9 km 3</td>
+    <td>Dim 27 sept. 20h00</td>
+    <td><strong>20.4 h</strong></td>
+    <td>Lun 28 sept. 16h25</td>
+    </tr>
+    <tr>
+    <td><strong>E4 Saint-Jean-de-Luz / Ciboure</strong></td>
+    <td>1113</td>
+    <td>S12 km 59</td>
+    <td>Lun 28 sept. 19h46</td>
+    <td><strong>55.5 h</strong></td>
+    <td>Jeu 1 oct. 03h15</td>
+    </tr>
+    <tr>
+    <td><strong>E5 Esquièze-Sère / Luz-Saint-Sauveur</strong></td>
+    <td>1372</td>
+    <td>S13 km 174</td>
+    <td>Mar 29 sept. 19h29</td>
+    <td><strong>54.0 h</strong></td>
+    <td>Ven 2 oct. 01h30</td>
+    </tr>
+    <tr>
+    <td><strong>E6 Tarascon-sur-Ariège / Ax-les-Thermes</strong></td>
+    <td>1629</td>
+    <td>S13 km 431</td>
+    <td>Mer 30 sept. 22h14</td>
+    <td><strong>50.3 h</strong></td>
+    <td>Sam 3 oct. 00h29</td>
+    </tr>
+    </tbody></table>
+    <h3>Ajouter une nuit : où, et ce que ça coûte</h3>
+    <p>Le plan 8 jours n&#x27;est pas un plan concurrent à choisir au départ : c&#x27;est le plan A avec une nuit de plus, insérée au moment où la fatigue le demande. Le découpage de la fin est alors recalculé sur les villes restantes.</p>
+    <table><thead><tr>
+    <th>Bascule après</th>
+    <th>Jours</th>
+    <th>Jour le plus long</th>
+    <th>Nuit la plus courte (hors N1)</th>
+    <th>Marge CP3</th>
+    <th>Arrivée</th>
+    <th>Marge GC</th>
+    </tr></thead><tbody>
+    <tr>
+    <td>_plan A (référence)_</td>
+    <td>7</td>
+    <td>14.7 h</td>
+    <td>6.0 h</td>
+    <td>+17.2 h</td>
+    <td>Jeu 1 oct. 22h44</td>
+    <td>+49.2 h</td>
+    </tr>
+    <tr>
+    <td>après <strong>E1 Solsona</strong></td>
+    <td>8</td>
+    <td>14.5 h</td>
+    <td>8.0 h</td>
+    <td>⚠️ +1.5 h</td>
+    <td>Ven 2 oct. 19h35</td>
+    <td>+28.4 h</td>
+    </tr>
+    <tr>
+    <td>après <strong>E2 Plan</strong></td>
+    <td>8</td>
+    <td>14.5 h</td>
+    <td>6.1 h</td>
+    <td>+17.0 h</td>
+    <td>Ven 2 oct. 19h35</td>
+    <td>+28.4 h</td>
+    </tr>
+    <tr>
+    <td>après <strong>E3 Saint-Michel / Saint-Jean-Pied-de-Port</strong></td>
+    <td>8</td>
+    <td>14.5 h</td>
+    <td>6.1 h</td>
+    <td>+17.0 h</td>
+    <td>Ven 2 oct. 19h35</td>
+    <td>+28.4 h</td>
+    </tr>
+    <tr>
+    <td>après <strong>E4 Saint-Jean-de-Luz / Ciboure</strong></td>
+    <td>8</td>
+    <td>14.5 h</td>
+    <td>6.1 h</td>
+    <td>+17.2 h</td>
+    <td>Ven 2 oct. 19h35</td>
+    <td>+28.4 h</td>
+    </tr>
+    <tr>
+    <td>après <strong>E5 Esquièze-Sère / Luz-Saint-Sauveur</strong></td>
+    <td>8</td>
+    <td>14.5 h</td>
+    <td>6.1 h</td>
+    <td>+17.2 h</td>
+    <td>Ven 2 oct. 16h35</td>
+    <td>+31.4 h</td>
+    </tr>
+    <tr>
+    <td>après <strong>E6 Tarascon-sur-Ariège / Ax-les-Thermes</strong></td>
+    <td>8</td>
+    <td>14.5 h</td>
+    <td>6.0 h</td>
+    <td>+17.2 h</td>
+    <td>Ven 2 oct. 15h06</td>
+    <td>+32.9 h</td>
+    </tr>
+    </tbody></table>
+    <p>&gt; La bascule reste dans les temps depuis n&#x27;importe quelle nuit. Seule l&#x27;insertion après E1 est chère : la journée ajoutée tombe avant CP3 et mange presque toute sa marge. À partir d&#x27;E2 elle est quasi gratuite, parce que le jour gagné se paie sur la partie non contrôlée.</p>
+  </main>
+</body>
+</html>
