@@ -1,4 +1,4 @@
-const CACHE_APP = 'c555-app-v1785573298';
+const CACHE_APP = 'c555-app-v1785575086';
 const CACHE_TILES = 'c555-tiles-v1';
 const APP_SHELL = ["./index.html", "./manifest.webmanifest", "./aide.html"];
 
@@ -23,7 +23,10 @@ self.addEventListener('fetch', e => {
     return;
   }
   // Tile requests: cache-first
-  if (url.hostname.includes('tiles.openfreemap.org') && (url.pathname.includes('.pbf') || url.pathname.includes('/fonts/') || url.pathname.includes('/sprites/'))) {
+  // Everything from the vector host, not just the tiles: without the style
+  // document and its TileJSON, MapLibre cannot start at all offline, so a full
+  // tile cache would sit there unusable.
+  if (url.hostname.includes('tiles.openfreemap.org')) {
     e.respondWith(
       caches.open(CACHE_TILES).then(c =>
         c.match(e.request).then(hit => {
